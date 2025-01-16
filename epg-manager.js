@@ -70,6 +70,8 @@ class EPGManager {
     async startEPGUpdate(url) {
         if (this.isUpdating) return;
         console.log('\n=== Inizio Aggiornamento EPG ===');
+        const startTime = Date.now();
+
 
         try {
             this.isUpdating = true;
